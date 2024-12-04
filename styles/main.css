@@ -43,7 +43,7 @@ body {
 #page-holder {
     width: 100%;
 	position: fixed;
-	top: 50px;
+	top: 0;
 	bottom: 0;
 	overflow-y: auto;
 }

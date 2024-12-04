@@ -12,32 +12,19 @@ Licensed under the MIT License. See LICENSE file for details.
 
 		<link href="styles/main.css" rel="stylesheet">
 		<link href="styles/qr-codes.css" rel="stylesheet">
-		<link href="styles/title-bar.css" rel="stylesheet">
 		<link href="styles/fontawesome-6.5.1.min.css" rel="stylesheet">
 		
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
 	</head>
 
 	<body>
-		<!-- Custom Title Bar -->
-		<div class="title-bar no-print">
-			<div class="title-left">
-				<div class="app-name">Häsibe+</div>
-			</div>
-			<div class="title-right">
-				<button id="minimize" class="window-button"><i class="fa fa-xs fa-window-minimize" aria-hidden="true"></i></button>
-				<button id="maximize" class="window-button"><i class="fa fa-xs fa-window-maximize" aria-hidden="true"></i></button>
-				<button id="close" class="window-button"><i class="fa fa-xs fa-times" aria-hidden="true"></i></button>
-			</div>
-		</div>
 		
 		<div id="page-holder">
 
 			<!-- Content -->
 			<div class="no-print print-tool-bar">
 				<a class="btn-back" href="index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i> Zurück</a>
-				<input type="button" id="btn-print" value="Drucken">
-				<input type="button" id="btn-save-to-pdf" value="Als PDF speichern">
+				<input type="button" id="btn-save-to-pdf" value="Drucken / PDF speichern">
 			</div>
 			<div id="qr-codes-holder"></div>
 			<div class="no-print print-tool-bar">
@@ -62,6 +49,7 @@ Licensed under the MIT License. See LICENSE file for details.
 		<script src="js/model/DefaultTask.js" charset="utf-8"></script>
 		<script src="js/model/User.js" charset="utf-8"></script>
 		<script src="js/model/Log.js" charset="utf-8"></script>
+		<script src="js/model/Language.js" charset="utf-8"></script>
 
 <!-- View Classes -->
 		<script src="js/view/FlagView.js" charset="utf-8"></script>
@@ -82,9 +70,6 @@ Licensed under the MIT License. See LICENSE file for details.
 
 <!-- Main JS File -->
 		<script src="js/qr-codes.js" charset="utf-8"></script>
-
-<!-- Title Bar -->
-		<script src="js/title-bar.js" charset="utf-8"></script>
 
 	</body>
 </html>
